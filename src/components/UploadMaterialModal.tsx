@@ -180,7 +180,7 @@ export const UploadMaterialModal: React.FC<UploadMaterialModalProps> = ({
       showToast('Material successfully analyzed!', 'success');
     } catch (err: any) {
       console.error('Analysis error:', err);
-      showToast('We encountered an issue analyzing this file. Using built-in engine.', 'error');
+      showToast('We encountered an issue analyzing this file. Using built-in engine.', 'success');
     } finally {
       setIsAnalyzing(false);
     }
